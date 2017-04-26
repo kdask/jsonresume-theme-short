@@ -22,17 +22,19 @@
 	<div id="resume">
 	{{#resume.basics}}
 	<section class="heading">
-		<header>
-			<h1>{{name}}</h1>
+    <header>
+      <div>
+        <h1><span>{{name}}</span> <span class="vertical_bar">|</span> <span class="info_label">{{label}}</span></h1>
+      </div>
 			<div class="contact">
-				{{#if email}}
-				<span class="detail">
-					<a href="mailto:{{email}}">{{email}}</a>
-				</span>
-				{{/if}}
 				{{#if phone}}
 				<span class="detail">
 					{{phone}}
+				</span>
+				{{/if}}
+				{{#if email}}
+				<span class="detail">
+					<a href="mailto:{{email}}">{{email}}</a>
 				</span>
 				{{/if}}
 				{{#if website}}
