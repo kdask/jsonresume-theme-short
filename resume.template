@@ -98,7 +98,7 @@
 		<section class="item">
 			<header>
 				{{#if company}}
-        {{#if website}}<a href="{{website}}">{{/if}}<h3 class="name">{{company}}{{#if website}}</a>{{/if}}</h3>
+        {{#if website}}<a href="{{website}}">{{/if}}<h3 class="name">{{company}}</h3>{{#if website}}</a>{{/if}}
 				{{/if}}
 			</header>
 			{{#if position}}
